@@ -46,5 +46,5 @@
     "MEILISEARCH_NO_ANALYTICS": "false"  
   },
    "outputDirectory": "./public/build",
-   "buildCommand": "./vendor/bin/sail up -d && php artisan migrate"
+   "buildCommand": "./vendor/bin/sail up && ./vendor/bin/sail artisan migrate"
 }
