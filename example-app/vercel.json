@@ -45,5 +45,6 @@
     "MEILISEARCH_HOST": "http://meilisearch:7700",
     "MEILISEARCH_NO_ANALYTICS": "false"  
   },
-   "outputDirectory": "./public/build"
+   "outputDirectory": "./public/build",
+   "buildCommand": "./vendor/bin/sail up -d && php artisan migrate"
 }
