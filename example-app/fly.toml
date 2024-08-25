@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for example-app-01 on 2024-08-20T11:51:15+09:00
+# fly.toml app configuration file generated for example-app-01 on 2024-08-25T11:05:38+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -19,8 +19,6 @@ console_command = 'php /var/www/html/artisan tinker'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
   SESSION_DRIVER = 'cookie'
   SESSION_SECURE_COOKIE = 'true'
-  DB_CONNECTION = 'pgsql'
-  HOSTNAME = "0.0.0.0"
 
 [http_service]
   internal_port = 80
@@ -32,4 +30,3 @@ console_command = 'php /var/www/html/artisan tinker'
 
 [[vm]]
   size = 'shared-cpu-2x'
-
